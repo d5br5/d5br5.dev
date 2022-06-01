@@ -10,7 +10,7 @@ const URL_LIST = {
 
 const nextConfig = {
 	reactStrictMode: true,
-
+	images: { domains: ["www.webfreecounter.com", "www.cutercounter.com"] },
 	async rewrites() {
 		return [
 			{
