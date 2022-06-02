@@ -11,15 +11,13 @@ const Project = ({ recordMap }: { recordMap: ExtendedRecordMap }) => {
 	if (!recordMap) {
 		return null;
 	}
-	return (
-		<NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
-	);
+	return <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />;
 };
 
 export default Project;
 
 export const getStaticProps = async () => {
-	const recordMap = await notion.getPage("d263c4b6f7e9465ba37528ba5c356502");
+	const recordMap = await notion.getPage(process.env.COIN);
 	return {
 		props: {
 			recordMap,
