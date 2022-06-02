@@ -10,7 +10,7 @@ export const Box = styled.div`
 	justify-content: center;
 	line-height: 10px;
 	gap: 15px;
-	background-color: #181717;
+	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	font-weight: 700;
 `;

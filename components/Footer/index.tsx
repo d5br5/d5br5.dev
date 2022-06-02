@@ -1,15 +1,37 @@
-import { Container } from "../../styles";
-import { Box, Top, ImgBox, CC, CCBox } from "./styles";
+import { Container, Box, Top, ImgBox, CC, CCBox, Contact, ContactList } from "./styles";
 import Image from "next/image";
+import Link from "next/link";
 const Footer = () => {
 	return (
 		<Container>
 			<Box>
 				<Top>
 					<ImgBox>
-						<Image src="/square.jpg" alt="profile" width="60px" height="60px" />
+						<Image src="/profile.jpg" alt="profile" width="60px" height="60px" />
 					</ImgBox>
-					<div>Contact List</div>
+
+					<ContactList>
+						<a href="https://github.com/d5br5" target="_blank" rel="noopener noreferrer">
+							<Contact>
+								<Image src="/contact/github.svg" width="70px" height="70px" alt="contact_github" />
+							</Contact>
+						</a>
+						<a href="https://www.instagram.com/d5._.br5/" target="_blank" rel="noopener noreferrer">
+							<Contact>
+								<Image
+									src="/contact/instagram.svg"
+									width="70px"
+									height="70px"
+									alt="contact_instagram"
+								/>
+							</Contact>
+						</a>
+						<a href="mailto:ehgud456456@naver.com">
+							<Contact>
+								<Image src="/contact/gmail.svg" width="70px" height="70px" alt="contact_gmail" />
+							</Contact>
+						</a>
+					</ContactList>
 				</Top>
 				<CCBox>
 					<CC>

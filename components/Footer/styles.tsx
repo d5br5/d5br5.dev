@@ -1,10 +1,18 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+`;
+
 export const Box = styled.div`
 	width: 100%;
 	border: 1px black solid;
 	border-radius: 15px;
-	margin-bottom: 50px;
+	margin: 0px 0 50px;
 	padding: 50px 50px;
 	background: #181717;
 	color: white;
@@ -16,6 +24,18 @@ export const Box = styled.div`
 export const Top = styled.div`
 	display: flex;
 	justify-content: space-between;
+`;
+
+export const ContactList = styled.div`
+	display: flex;
+	gap: 20px;
+	margin-top: 10px;
+`;
+
+export const Contact = styled.div`
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
 `;
 
 export const ImgBox = styled.div`
