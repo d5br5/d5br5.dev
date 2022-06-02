@@ -4,9 +4,9 @@ export const Box = styled.div`
 	width: 100%;
 	border: 1px black solid;
 	border-radius: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	padding: 50px 50px;
-	background: black;
+	background: #181717;
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -27,5 +27,12 @@ export const ImgBox = styled.div`
 
 export const CCBox = styled.div`
 	display: flex;
+	flex-direction: column;
+	gap: 5px;
+`;
+
+export const CC = styled.div`
+	display: flex;
+	font-size: 17px;
 	align-items: center;
 `;
