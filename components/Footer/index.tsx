@@ -1,6 +1,6 @@
 import { Container, Box, Top, ImgBox, CC, CCBox, Contact, ContactList } from "./styles";
 import Image from "next/image";
-import Link from "next/link";
+
 const Footer = () => {
 	return (
 		<Container>
@@ -9,7 +9,6 @@ const Footer = () => {
 					<ImgBox>
 						<Image src="/profile.jpg" alt="profile" width="60px" height="60px" />
 					</ImgBox>
-
 					<ContactList>
 						<a href="https://github.com/d5br5" target="_blank" rel="noopener noreferrer">
 							<Contact>
