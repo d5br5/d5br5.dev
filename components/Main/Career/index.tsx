@@ -1,26 +1,37 @@
-import { H2, H3, Desc } from "../../../styles";
-import { PeriodContainer, DetailContainer, Content } from "./styles";
+import { H2, Desc, EngBig, Eng, Period, SemiTitle } from "../../../styles";
+import { PeriodContainer, DetailContainer, Content, Role } from "./styles";
 
 const Career = () => {
 	return (
 		<div>
-			<H2>Career</H2>
-			<div>
-				<H3>티맥스 핀테크</H3>
-				<Desc>
-					코어 뱅킹, 로보 어드바이저 등의 서비스를 제공하는 Fintech B2B / B2C BaaS 전문 기업
-				</Desc>
-			</div>
+			<H2>
+				<EngBig>Career</EngBig>
+			</H2>
 			<Content>
 				<PeriodContainer>
-					<div>Web Front-end Developer</div>
-					<div>2022.02. - 현재</div>
+					<SemiTitle>
+						<Eng>Tmax Fintech</Eng>
+					</SemiTitle>
+					<Role>
+						<Eng>Web Front-end Developer</Eng>
+					</Role>
+					<Period>
+						<Eng>2022. 02. - present</Eng>
+					</Period>
 				</PeriodContainer>
 				<DetailContainer>
-					<div>자산배분, 트레이딩 시뮬레이터 프론트엔드 개발</div>
-					<div>React, TypeScript 기반 SPA 제작, Redux를 통한 상태관리</div>
-					<div>git commit, branch rule 통일 및 정리</div>
-					<div>자세한 프로젝트 내역은 아래 Project 항목 참조</div>
+					<Desc>
+						코어 뱅킹, 투자 시뮬레이터 등의 서비스를 제공하는{" "}
+						<Eng>Fintech B2B / B2C BaaS</Eng> 기업
+						<br />
+						자산배분, 트레이딩 시뮬레이터 프론트엔드 개발 <br />
+						<Eng>React, TypeScript</Eng> 기반 <Eng>SPA</Eng> 제작,{" "}
+						<Eng>Redux</Eng>를 통한 상태관리
+						<br />
+						<Eng>git commit, branch rule</Eng> 통일 및 정리
+						<br />
+						자세한 프로젝트 내역은 아래 항목 참조
+					</Desc>
 				</DetailContainer>
 			</Content>
 		</div>

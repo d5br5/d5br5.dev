@@ -32,3 +32,7 @@ export const SkillContent = styled.div`
 export const ContentContainer = styled.div`
 	width: 25%;
 `;
+
+export const Title = styled.div`
+	font-weight: 400;
+`;

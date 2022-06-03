@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
-import { Box } from "../styles";
+import { Box, Title } from "../styles";
+import { Eng } from "../../../../styles";
 
 interface Props {
 	filename: string;
@@ -16,7 +17,9 @@ const Card: FC<Props> = ({ filename, title }) => {
 				height="60px"
 				alt={`skill_${title}`}
 			/>
-			<div>{title}</div>
+			<Title>
+				<Eng>{title}</Eng>
+			</Title>
 		</Box>
 	);
 };

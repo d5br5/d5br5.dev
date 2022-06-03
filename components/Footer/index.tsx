@@ -1,4 +1,14 @@
-import { Container, Box, Top, ImgBox, CC, CCBox, Contact, ContactList } from "./styles";
+import {
+	Container,
+	Box,
+	Top,
+	ImgBox,
+	CC,
+	CCBox,
+	Contact,
+	ContactList,
+} from "./styles";
+import { Eng } from "../../styles";
 import Image from "next/image";
 
 const Footer = () => {
@@ -7,15 +17,33 @@ const Footer = () => {
 			<Box>
 				<Top>
 					<ImgBox>
-						<Image src="/profile.jpg" alt="profile" width="60px" height="60px" />
+						<Image
+							src="/profile.jpg"
+							alt="profile"
+							width="60px"
+							height="60px"
+						/>
 					</ImgBox>
 					<ContactList>
-						<a href="https://github.com/d5br5" target="_blank" rel="noopener noreferrer">
+						<a
+							href="https://github.com/d5br5"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<Contact>
-								<Image src="/contact/github.svg" width="70px" height="70px" alt="contact_github" />
+								<Image
+									src="/contact/github.svg"
+									width="70px"
+									height="70px"
+									alt="contact_github"
+								/>
 							</Contact>
 						</a>
-						<a href="https://www.instagram.com/d5._.br5/" target="_blank" rel="noopener noreferrer">
+						<a
+							href="https://www.instagram.com/d5._.br5/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<Contact>
 								<Image
 									src="/contact/instagram.svg"
@@ -27,14 +55,21 @@ const Footer = () => {
 						</a>
 						<a href="mailto:ehgud456456@naver.com">
 							<Contact>
-								<Image src="/contact/gmail.svg" width="70px" height="70px" alt="contact_gmail" />
+								<Image
+									src="/contact/gmail.svg"
+									width="70px"
+									height="70px"
+									alt="contact_gmail"
+								/>
 							</Contact>
 						</a>
 					</ContactList>
 				</Top>
 				<CCBox>
 					<CC>
-						<div>Built with Next.js</div>
+						<div>
+							<Eng>Built with Next.js</Eng>
+						</div>
 						<a
 							href="https://www.webfreecounter.com/"
 							target="_blank"
@@ -50,7 +85,9 @@ const Footer = () => {
 						</a>
 					</CC>
 					<CC>
-						<div> © 2022 Doh Kim. All Rights Reserved.</div>
+						<div>
+							<Eng>© 2022 Doh Kim. All Rights Reserved.</Eng>
+						</div>
 					</CC>
 				</CCBox>
 			</Box>

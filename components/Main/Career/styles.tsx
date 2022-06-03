@@ -19,3 +19,8 @@ export const Content = styled.div`
 	display: flex;
 	margin-top: 20px;
 `;
+
+export const Role = styled.div`
+	font-weight: 600;
+	margin-top: 15px;
+`;
