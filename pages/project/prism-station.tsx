@@ -11,13 +11,15 @@ const Project = ({ recordMap }: { recordMap: ExtendedRecordMap }) => {
 	if (!recordMap) {
 		return null;
 	}
-	return <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />;
+	return (
+		<NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
+	);
 };
 
 export default Project;
 
 export const getStaticProps = async () => {
-	const recordMap = await notion.getPage(process.env.PRISM);
+	const recordMap = await notion.getPage(process.env.PRISM || "");
 	return {
 		props: {
 			recordMap,
