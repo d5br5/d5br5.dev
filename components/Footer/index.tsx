@@ -1,13 +1,4 @@
-import {
-	Container,
-	Box,
-	Top,
-	ImgBox,
-	CC,
-	CCBox,
-	Contact,
-	ContactList,
-} from "./styles";
+import { Container, Box, Top, ImgBox, CC, CCBox, Contact, ContactList } from "./styles";
 import { Eng } from "../../styles";
 import Image from "next/image";
 
@@ -22,28 +13,16 @@ const Footer = () => {
 							alt="profile"
 							width="60px"
 							height="60px"
+							style={{ cursor: "pointer" }}
 						/>
 					</ImgBox>
 					<ContactList>
-						<a
-							href="https://github.com/d5br5"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="https://github.com/d5br5" target="_blank" rel="noopener noreferrer">
 							<Contact>
-								<Image
-									src="/contact/github.svg"
-									width="70px"
-									height="70px"
-									alt="contact_github"
-								/>
+								<Image src="/contact/github.svg" width="70px" height="70px" alt="contact_github" />
 							</Contact>
 						</a>
-						<a
-							href="https://www.instagram.com/d5._.br5/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="https://www.instagram.com/d5._.br5/" target="_blank" rel="noopener noreferrer">
 							<Contact>
 								<Image
 									src="/contact/instagram.svg"
@@ -55,12 +34,7 @@ const Footer = () => {
 						</a>
 						<a href="mailto:ehgud456456@naver.com">
 							<Contact>
-								<Image
-									src="/contact/gmail.svg"
-									width="70px"
-									height="70px"
-									alt="contact_gmail"
-								/>
+								<Image src="/contact/gmail.svg" width="70px" height="70px" alt="contact_gmail" />
 							</Contact>
 						</a>
 					</ContactList>

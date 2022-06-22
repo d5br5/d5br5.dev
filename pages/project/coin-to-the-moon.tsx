@@ -11,9 +11,7 @@ const Project = ({ recordMap }: { recordMap: ExtendedRecordMap }) => {
 	if (!recordMap) {
 		return null;
 	}
-	return (
-		<NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
-	);
+	return <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />;
 };
 
 export default Project;

@@ -14,8 +14,8 @@ export const Card = styled.div`
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	cursor: pointer;
-	box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.05);
-	transition: all ease 0.1s;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	transition: all ease 0.2s;
 	&:hover {
 		background-color: rgba(0, 0, 0, 0.03);
 	}
@@ -30,7 +30,7 @@ export const BgImg = styled.div`
 
 export const Title = styled.div`
 	font-family: "S-CoreDream-7";
-	font-size: 16px;
+	font-size: 17px;
 	margin-top: 20px;
 `;
 

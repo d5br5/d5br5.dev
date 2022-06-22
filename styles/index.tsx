@@ -12,12 +12,19 @@ export const Kor = styled.span`
 	font-family: "S-CoreDream-6";
 `;
 
+export const BoldKor = styled.span`
+	font-family: "S-CoreDream-7";
+`;
+
 export const Eng = styled.span`
-	font-family: Inter, Helvetica, Apple Color Emoji, Segoe UI Emoji,
-		NotoColorEmoji, Noto Color Emoji, Segoe UI Symbol, Android Emoji,
-		EmojiSymbols, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-		Helvetica Neue, Noto Sans, sans-serif;
+	font-family: Inter, Helvetica, Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Noto Color Emoji,
+		Segoe UI Symbol, Android Emoji, EmojiSymbols, -apple-system, BlinkMacSystemFont, Segoe UI,
+		Roboto, Helvetica Neue, Noto Sans, sans-serif;
 	letter-spacing: -0.7px;
+`;
+
+export const BoldEng = styled(Eng)`
+	font-weight: 700;
 `;
 
 export const EngBig = styled(Eng)`
@@ -73,7 +80,7 @@ export const SemiTitle = styled.div`
 	font-size: 18px;
 	border-radius: 5px;
 	width: 150px;
-
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	margin-top: 5px;
 
 	color: white;

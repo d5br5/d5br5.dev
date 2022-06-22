@@ -18,6 +18,7 @@ export const Box = styled.div`
 	color: white;
 	display: flex;
 	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	gap: 50px;
 `;
 
