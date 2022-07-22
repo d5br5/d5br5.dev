@@ -10,10 +10,19 @@ const Project = () => {
 				<EngBig>Project</EngBig>
 			</H2>
 			<CardContainer>
-				<Link href="/project/trading-simulator">
+				<a
+					href="https://d5br5.notion.site/Robo-Advisor-9392eca8f4c347419572cf1cd3acd7b3"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<Card>
 						<BgImg>
-							<Image src="/project/simulator.png" alt="test image" width="285px" height="200px" />
+							<Image
+								src="/project/simulator.png"
+								alt="test image"
+								width="285px"
+								height="200px"
+							/>
 						</BgImg>
 						<Title>투자 시뮬레이터</Title>
 						<Intro>
@@ -25,16 +34,26 @@ const Project = () => {
 							<Eng>Chart</Eng>를 사용하여 <BoldKor>직관적인 결과 확인</BoldKor>
 						</Intro>
 					</Card>
-				</Link>
-				<Link href="/project/coin-to-the-moon">
+				</a>
+				<a
+					href="https://d5br5.notion.site/Coin-to-the-Moon-c5341385db39480088fbab2c78600558"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<Card>
 						<BgImg>
-							<Image src="/project/coin.png" alt="test image" width="285px" height="200px" />
+							<Image
+								src="/project/coin.png"
+								alt="test image"
+								width="285px"
+								height="200px"
+							/>
 						</BgImg>
 						<Title>암호화폐 모의거래소</Title>
 						<Intro>
 							6종의 암호화폐 매매 가능 <br />
-							<Eng>Coin Gecko API</Eng>를 활용한 <BoldKor>실시간 가격 변동</BoldKor>
+							<Eng>Coin Gecko API</Eng>를 활용한{" "}
+							<BoldKor>실시간 가격 변동</BoldKor>
 							<br />
 							자산 조회 및 거래 요청시 <BoldEng>JWT</BoldEng>
 							<BoldKor>를 통한 인증</BoldKor>
@@ -42,11 +61,20 @@ const Project = () => {
 							<BoldKor>간단한 정보 입력</BoldKor>으로 회원가입 및 로그인
 						</Intro>
 					</Card>
-				</Link>
-				<Link href="/project/prism-station">
+				</a>
+				<a
+					href="https://d5br5.notion.site/Prism-Station-a3e33164f2bf47b6ae5dd39b3d39cadf"
+					target="_blank"
+					rel="noreferrer"
+				>
 					<Card>
 						<BgImg>
-							<Image src="/project/prism.jpg" alt="test image" width="285px" height="200px" />
+							<Image
+								src="/project/prism.jpg"
+								alt="test image"
+								width="285px"
+								height="200px"
+							/>
 						</BgImg>
 						<Title>셀프스튜디오 종합 비교 플랫폼</Title>
 						<Intro>
@@ -59,7 +87,7 @@ const Project = () => {
 							<Eng>MVP</Eng> 런칭 3일만에 <BoldKor>이용자 1,500명</BoldKor> 돌파
 						</Intro>
 					</Card>
-				</Link>
+				</a>
 			</CardContainer>
 		</div>
 	);
