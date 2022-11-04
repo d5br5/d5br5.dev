@@ -8,6 +8,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<div>
 			<Head>
 				<title>Hi, Doh Kim</title>
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="Doh Kim" />
+				<meta property="og:description" content="portfolio & resume" />
 			</Head>
 			<Component {...pageProps} />
 			<Footer />
