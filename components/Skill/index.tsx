@@ -1,54 +1,42 @@
-import { H2, H3, EngBig } from "../../../styles";
-import { CardBox, SkillContent, ContentContainer } from "./styles";
-import Card from "./components/Card";
+import { H2, H3, Eng } from "@styles/context";
+import { CardBox, SkillContent, ContentContainer } from "@styles/skill";
+import Card from "./Card";
 import { haveUsed, tools, useWell } from "./data";
 
 const Skill = () => {
 	return (
 		<div>
 			<H2>
-				<EngBig>Skill</EngBig>
+				<Eng>Skill</Eng>
 			</H2>
 			<SkillContent>
 				<ContentContainer>
 					<H3>
-						<EngBig>Use Well</EngBig>
+						<Eng>Using</Eng>
 					</H3>
 					<CardBox>
 						{useWell.map((item) => (
-							<Card
-								title={item.name}
-								filename={item.filename}
-								key={item.name}
-							/>
+							<Card title={item.name} filename={item.filename} key={item.name} />
 						))}
 					</CardBox>
 				</ContentContainer>
 				<ContentContainer>
 					<H3>
-						<EngBig>Have Used</EngBig>
+						<Eng>Have Used</Eng>
 					</H3>
 					<CardBox>
 						{haveUsed.map((item) => (
-							<Card
-								title={item.name}
-								filename={item.filename}
-								key={item.name}
-							/>
+							<Card title={item.name} filename={item.filename} key={item.name} />
 						))}
 					</CardBox>
 				</ContentContainer>
 				<ContentContainer>
 					<H3>
-						<EngBig>Tools</EngBig>
+						<Eng>Tools</Eng>
 					</H3>
 					<CardBox>
 						{tools.map((item) => (
-							<Card
-								title={item.name}
-								filename={item.filename}
-								key={item.name}
-							/>
+							<Card title={item.name} filename={item.filename} key={item.name} />
 						))}
 					</CardBox>
 				</ContentContainer>

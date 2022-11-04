@@ -1,16 +1,16 @@
-import { H2, Desc, EngBig, Eng, Period, SemiTitle } from "../../../styles";
-import { Card, CardBox, TitleBox, DetailBox } from "./styles";
+import { H2, Desc, Eng, Period, BlackBox } from "@styles/context";
+import { Card, CardBox, TitleBox, DetailBox } from "@styles/history";
 
 const History = () => {
 	return (
 		<div>
 			<H2>
-				<EngBig>History</EngBig>
+				<Eng>History</Eng>
 			</H2>
 			<CardBox>
 				<Card>
 					<TitleBox>
-						<SemiTitle>서울대학교</SemiTitle>
+						<BlackBox>서울대학교</BlackBox>
 						<Period>
 							<Eng>2015. 03. - 2022. 02.</Eng>
 						</Period>
@@ -22,7 +22,7 @@ const History = () => {
 				</Card>
 				<Card>
 					<TitleBox>
-						<SemiTitle>서울지방경찰청</SemiTitle>
+						<BlackBox>서울경찰청</BlackBox>
 						<Period>
 							<Eng>2017. 09. - 2019. 05.</Eng>
 						</Period>

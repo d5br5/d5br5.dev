@@ -1,12 +1,11 @@
-import Link from "next/link";
-import { H2, Desc, EngBig, Eng, Period, SemiTitle, BoldKor, BoldEng } from "../../../styles";
-import { PeriodContainer, DetailContainer, Content, Role } from "./styles";
+import { H2, Desc, Eng, Period, BlackBox } from "@styles/context";
+import { PeriodContainer, DetailContainer, Content, Role } from "@styles/career";
 
 const Career = () => {
 	return (
 		<div>
 			<H2>
-				<EngBig>Career</EngBig>
+				<Eng>Career</Eng>
 			</H2>
 			<Content>
 				<PeriodContainer>
@@ -15,9 +14,9 @@ const Career = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<SemiTitle>
+						<BlackBox>
 							<Eng>Tmax Fintech</Eng>
-						</SemiTitle>
+						</BlackBox>
 					</a>
 					<Role>
 						<Eng>Web Front-end Developer</Eng>
@@ -28,14 +27,15 @@ const Career = () => {
 				</PeriodContainer>
 				<DetailContainer>
 					<Desc>
-						코어 뱅킹, 투자 시뮬레이터 등의 서비스를 제공하는 <Eng>Fintech B2B / B2C BaaS</Eng> 기업
+						자산배분, 트레이딩 시뮬레이터 프론트엔드 개발
 						<br />
-						<BoldKor>자산배분, 트레이딩 시뮬레이터 프론트엔드 개발</BoldKor> <br />
 						<Eng>React, TypeScript</Eng> 기반 <Eng>SPA</Eng> 제작, <Eng>Redux</Eng>를 통한 상태관리
 						<br />
-						<Eng>git commit, branch rule</Eng> 통일 및 정리
+						다양한 <Eng>backtest data</Eng>를 <Eng>chart.js</Eng>로 도식화
 						<br />
-						<BoldKor>자세한 프로젝트 내역</BoldKor>은 아래 항목 참조
+						브라우저 렌더링 성능 개선 ( <Eng>Lighthouse</Eng> 기준, 60점 {"→"} 86점 )
+						<br />
+						협업을 위한 <Eng>git commit, branch rule</Eng> 통일 및 정리
 					</Desc>
 				</DetailContainer>
 			</Content>

@@ -6,14 +6,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
-`;
-
-export const Kor = styled.span`
-	font-family: "S-CoreDream-6";
-`;
-
-export const BoldKor = styled.span`
-	font-family: "S-CoreDream-7";
+	padding: 0 20px;
 `;
 
 export const Eng = styled.span`
@@ -25,32 +18,34 @@ export const Eng = styled.span`
 
 export const BoldEng = styled(Eng)`
 	font-weight: 700;
-`;
-
-export const EngBig = styled(Eng)`
 	letter-spacing: -1px;
 `;
 
 export const MiniTitle = styled.div`
 	font-size: 24px;
-	font-family: "S-CoreDream-5";
+	font-weight: 500;
+	margin-bottom: 20px;
 `;
 
 export const H1 = styled.div`
-	font-size: 45px;
-	font-weight: 700;
+	font-size: 50px;
+	font-weight: 900;
 	white-space: pre-wrap;
 	margin: 30px 0 10px;
 `;
 
 export const H2 = styled.div`
 	font-size: 32px;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 30px;
+	&::before {
+		content: ".";
+		margin-right: 20px;
+		background-color: black;
+	}
 `;
 
 export const H3 = styled.div<{ isGray?: boolean }>`
-	font-family: "S-CoreDream-7";
 	font-size: 19px;
 	font-weight: 550;
 	margin-bottom: 20px;
@@ -58,22 +53,17 @@ export const H3 = styled.div<{ isGray?: boolean }>`
 `;
 
 export const Desc = styled.div<{ isGray?: boolean }>`
-	font-family: "S-CoreDream-3";
 	font-size: 17px;
 	line-height: 35px;
 	color: ${(props) => (props.isGray ? "#717170" : "black")};
 `;
 
-export const Strong = styled.span`
-	font-family: "S-CoreDream-7";
-`;
 export const Period = styled.div`
 	color: rgba(0, 0, 0, 0.6);
 	margin-bottom: 20px;
 `;
 
-export const SemiTitle = styled.div`
-	font-family: "S-CoreDream-4";
+export const BlackBox = styled.div`
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.8);
 	padding: 6px;
@@ -82,7 +72,6 @@ export const SemiTitle = styled.div`
 	width: 150px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	margin-top: 5px;
-
 	color: white;
 	font-weight: 500;
 `;

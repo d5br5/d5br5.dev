@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
-import { Box, Title } from "../styles";
-import { Eng } from "../../../../styles";
+import { Box, Title } from "@styles/skill";
+import { Eng } from "@styles/context";
 
 interface Props {
 	filename: string;
@@ -13,8 +13,8 @@ const Card: FC<Props> = ({ filename, title }) => {
 		<Box>
 			<Image
 				src={`/skill/white/${filename}.svg`}
-				width="60px"
-				height="60px"
+				width="45px"
+				height="45px"
 				alt={`skill_${title}`}
 			/>
 			<Title>

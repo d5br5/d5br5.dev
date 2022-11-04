@@ -1,9 +1,21 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
-import Main from "../components/Main";
+import Title from "@components/Title";
+import History from "@components/History";
+import Project from "@components/Project";
+import Skill from "@components/Skill";
+import Career from "@components/Career";
+import { Container } from "@styles/context";
 
 const Home: NextPage = () => {
-	return <Main />;
+	return (
+		<Container>
+			<Title />
+			<Career />
+			<Project />
+			<Skill />
+			<History />
+		</Container>
+	);
 };
 
 export default Home;

@@ -1,5 +1,5 @@
-import { Container, Box, Top, ImgBox, CC, CCBox, Contact, ContactList } from "./styles";
-import { Eng } from "../../styles";
+import { Container, Box, Top, ImgBox, CC, CCBox, Contact, ContactList } from "@styles/footer";
+import { Eng } from "@styles/context";
 import Image from "next/image";
 
 const Footer = () => {
@@ -8,13 +8,7 @@ const Footer = () => {
 			<Box>
 				<Top>
 					<ImgBox>
-						<Image
-							src="/profile.jpg"
-							alt="profile"
-							width="60px"
-							height="60px"
-							style={{ cursor: "pointer" }}
-						/>
+						<Image src="/profile.jpg" alt="profile" width="60px" height="60px" />
 					</ImgBox>
 					<ContactList>
 						<a href="https://github.com/d5br5" target="_blank" rel="noopener noreferrer">

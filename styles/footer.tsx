@@ -6,6 +6,7 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
+	padding: 0 20px;
 `;
 
 export const Box = styled.div`
@@ -37,6 +38,7 @@ export const Contact = styled.div`
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
+	margin: 0 auto;
 `;
 
 export const ImgBox = styled.div`
