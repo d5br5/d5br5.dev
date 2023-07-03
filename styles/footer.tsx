@@ -36,14 +36,14 @@ export const ContactList = styled.div`
 `;
 
 export const Contact = styled.div`
-  width: 35px;
-  height: 35px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
 `;
 
 export const ImgBox = styled.div`
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   overflow: hidden;
 `;

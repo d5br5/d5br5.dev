@@ -1,4 +1,5 @@
 import { H2, Eng } from "@styles/context";
+import styled from "styled-components";
 
 import Tmax from "./Tmax";
 import Adena from "./Adena";
@@ -9,10 +10,18 @@ const Career = () => {
       <H2>
         <Eng>Career</Eng>
       </H2>
-      <Adena />
-      <Tmax />
+      <CompanyWrapper>
+        <Adena />
+        <Tmax />
+      </CompanyWrapper>
     </div>
   );
 };
+
+const CompanyWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
 
 export default Career;

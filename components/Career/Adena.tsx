@@ -11,13 +11,11 @@ const Adena = () => {
   return (
     <Content>
       <PeriodContainer>
-        <a
-          href="https://www.adenasoft.com/ko-KR"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Company title="Adena Soft" />
-        </a>
+        <Company
+          eng
+          title="Adena Soft"
+          link="https://www.adenasoft.com/ko-KR"
+        />
         <Role>
           <Eng>Web Front-end Developer</Eng>
         </Role>
@@ -26,7 +24,11 @@ const Adena = () => {
         </Period>
       </PeriodContainer>
       <DetailContainer>
-        <Desc>2023. 03. 06 입사 예정</Desc>
+        <Desc>가상화폐 현물, 선물 거래소 프론트엔드 개발 (React.js)</Desc>
+        <Desc>React.js {"→"} Next.js Migration 준비중 </Desc>
+        <Desc>거래소 Admin 개발 (Vue.js)</Desc>
+        <Desc>다크/라이트 테마 도입. 디자인 및 색상 코드 통일</Desc>
+        <Desc>검색 엔진 최적화(SEO) 작업</Desc>
       </DetailContainer>
     </Content>
   );

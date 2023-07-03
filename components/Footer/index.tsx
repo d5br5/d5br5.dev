@@ -51,8 +51,8 @@ const Footer = () => {
               <Contact>
                 <Image
                   src="/contact/gmail.svg"
-                  width="70px"
-                  height="70px"
+                  width="40px"
+                  height="40px"
                   alt="contact_gmail"
                 />
               </Contact>

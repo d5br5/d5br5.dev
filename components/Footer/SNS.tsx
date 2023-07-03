@@ -12,7 +12,7 @@ const SNS = ({ href, src, title, size }: Props) => {
   return (
     <Contact>
       <a href={href} target="_blank" rel="noopener noreferrer">
-        <Image src={src} width="90px" height="90px" alt={`contact_${title}`} />
+        <Image src={src} width="70px" height="70px" alt={`contact_${title}`} />
       </a>
     </Contact>
   );

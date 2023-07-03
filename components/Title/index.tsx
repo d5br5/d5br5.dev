@@ -4,19 +4,6 @@ import { Contact, ContactList } from "@styles/footer";
 import Image from "next/image";
 import styled from "styled-components";
 
-const ImgBox = styled.div`
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
-  border-radius: 150px;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-  &:hover {
-    border: 4px black solid;
-  }
-`;
-
 const Intro = () => {
   return (
     <div style={{ textAlign: "center" }}>
@@ -58,5 +45,18 @@ const Intro = () => {
     </div>
   );
 };
+
+const ImgBox = styled.div`
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 150px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  &:hover {
+    border: 4px black solid;
+  }
+`;
 
 export default Intro;
